@@ -19,6 +19,8 @@ kommit-backend/
 │   └── settings.json
 ├── docs/
 │   └── TECH.md
+├── prisma/
+│   └── schema.prisma
 ├── src/
 │   ├── index.ts
 │   ├── app.ts
@@ -32,14 +34,18 @@ kommit-backend/
 │   ├── controllers/
 │   │   ├── healthController.ts
 │   │   └── rootController.ts
-│   └── services/
-│       ├── health/
-│       │   └── healthService.ts
-│       └── root/
-│           └── rootService.ts
+│   ├── services/
+│   │   ├── health/
+│   │   │   └── healthService.ts
+│   │   └── root/
+│   │       └── rootService.ts
+│   └── repositories/
+│       └── prismaClient.ts
+├── .env.example
 ├── .gitignore
 ├── CLAUDE.md
 ├── package.json
 ├── pnpm-lock.yaml
+├── prisma.config.ts
 └── tsconfig.json
 ```
