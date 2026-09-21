@@ -27,6 +27,8 @@ kommit-backend/
 │   ├── config/
 │   │   ├── env.ts
 │   │   └── service.ts
+│   ├── middlewares/
+│   │   └── cors.ts
 │   ├── routes/
 │   │   ├── index.ts
 │   │   ├── dbHealthRoutes.ts
