@@ -23,3 +23,6 @@ Thumbs.db
 
 # Réglages Claude Code locaux à la machine
 .claude/settings.local.json
+
+# Dumps de crash de Git Bash
+*.stackdump

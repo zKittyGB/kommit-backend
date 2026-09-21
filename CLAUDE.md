@@ -17,6 +17,29 @@ kommit-backend/
 │       └── tests-arrange-act-assert.md
 ├── .vscode/
 │   └── settings.json
+├── docs/
+│   └── TECH.md
+├── src/
+│   ├── index.ts
+│   ├── app.ts
+│   ├── config/
+│   │   ├── env.ts
+│   │   └── service.ts
+│   ├── routes/
+│   │   ├── index.ts
+│   │   ├── healthRoutes.ts
+│   │   └── rootRoutes.ts
+│   ├── controllers/
+│   │   ├── healthController.ts
+│   │   └── rootController.ts
+│   └── services/
+│       ├── health/
+│       │   └── healthService.ts
+│       └── root/
+│           └── rootService.ts
 ├── .gitignore
-└── CLAUDE.md
+├── CLAUDE.md
+├── package.json
+├── pnpm-lock.yaml
+└── tsconfig.json
 ```
