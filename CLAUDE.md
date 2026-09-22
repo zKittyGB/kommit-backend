@@ -8,13 +8,15 @@ Backend du projet Kommit : une API Node.js en TypeScript (Express, Prisma/Postgr
 kommit-backend/
 ├── .claude/
 │   ├── settings.json
-│   └── rules/
-│       ├── architecture-backend.md
-│       ├── files.md
-│       ├── imports.md
-│       ├── perimetre-backend.md
-│       ├── pnpm.md
-│       └── tests-arrange-act-assert.md
+│   ├── rules/
+│   │   ├── architecture-backend.md
+│   │   ├── files.md
+│   │   ├── imports.md
+│   │   ├── perimetre-backend.md
+│   │   ├── pnpm.md
+│   │   └── tests-arrange-act-assert.md
+│   └── skills/
+│       └── .gitkeep
 ├── .vscode/
 │   └── settings.json
 ├── docs/
