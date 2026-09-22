@@ -11,7 +11,8 @@ src/
 ├── routes/           # déclaration des routes. Aucun corps de handler.
 ├── controllers/      # les handlers : lire la requête, appeler un service, répondre.
 ├── services/         # la logique métier. Ne connaît ni Express, ni req, ni res.
-└── repositories/     # l'accès aux données. Implémente les interfaces de repository des services.
+├── repositories/     # l'accès aux données. Implémente les interfaces de repository des services.
+└── types/            # les types partagés avec le frontend (contrat d'API).
 ```
 
 ## Le rôle de chaque emplacement
@@ -35,6 +36,8 @@ commitsRoutes.get('/', getCommits)
 **`services/`** — la logique métier, en fonctions qui prennent et rendent des données. **Un service ne reçoit jamais `req` ni `res`** et n'importe jamais Express : il doit rester appelable depuis un test ou un script sans serveur HTTP.
 
 **`repositories/`** — l'accès aux données (Prisma/Postgres). Un repository implémente une **interface déclarée par le service** (le *port*) : le service dit ce dont il a besoin (`findById`, `create`…), le repository le remplit avec la vraie base. Le service reçoit son repository **par injection** et ne connaît jamais Prisma ; en test, on injecte un faux repository. Un repository ne reçoit jamais `req` ni `res`.
+
+**`types/`** : le contrat d'API, `apiContract.ts`. Le même fichier existe dans le repo frontend : chaque repo implémente sa face des mêmes types, ce qui permet d'avancer en parallèle. **Il ne se modifie pas d'un seul côté** : un changement du contrat se fait dans les 2 repos, sinon le front et le back ne parlent plus le même format.
 
 ## Sens des dépendances
 

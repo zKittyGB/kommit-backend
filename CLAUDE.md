@@ -14,6 +14,7 @@ kommit-backend/
 │   │   ├── imports.md
 │   │   ├── perimetre-backend.md
 │   │   ├── pnpm.md
+│   │   ├── structure-a-jour.md
 │   │   └── tests-arrange-act-assert.md
 │   └── skills/
 │       └── .gitkeep
@@ -47,9 +48,11 @@ kommit-backend/
 │   │   │   └── healthService.ts
 │   │   └── root/
 │   │       └── rootService.ts
-│   └── repositories/
-│       ├── dbHealthRepository.ts
-│       └── prismaClient.ts
+│   ├── repositories/
+│   │   ├── dbHealthRepository.ts
+│   │   └── prismaClient.ts
+│   └── types/
+│       └── apiContract.ts
 ├── .env.example
 ├── .gitignore
 ├── CLAUDE.md
