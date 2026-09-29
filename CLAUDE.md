@@ -54,6 +54,16 @@ kommit-backend/
 │   │   ├── healthController.ts
 │   │   └── rootController.ts
 │   ├── services/
+│   │   ├── auth/
+│   │   │   ├── authErrors/
+│   │   │   │   ├── authErrors.ts
+│   │   │   │   └── authErrors.test.ts
+│   │   │   ├── authValidation/
+│   │   │   │   ├── authValidation.ts
+│   │   │   │   └── authValidation.test.ts
+│   │   │   └── sessionGuard/
+│   │   │       ├── sessionGuard.ts
+│   │   │       └── sessionGuard.test.ts
 │   │   ├── dbHealth/
 │   │   │   └── dbHealthService.ts
 │   │   ├── health/
@@ -65,11 +75,15 @@ kommit-backend/
 │   │   └── prismaClient.ts
 │   └── types/
 │       └── apiContract.ts
+├── testing/
+│   ├── inventaire-KOM-06.md
+│   └── smokes-KOM-06.md
 ├── .env.example
 ├── .gitignore
 ├── CLAUDE.md
 ├── package.json
 ├── pnpm-lock.yaml
 ├── prisma.config.ts
-└── tsconfig.json
+├── tsconfig.json
+└── vitest.config.ts
 ```
