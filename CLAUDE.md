@@ -17,7 +17,8 @@ kommit-backend/
 │   │   ├── structure-a-jour.md
 │   │   └── tests-arrange-act-assert.md
 │   └── skills/
-│       └── .gitkeep
+│       └── start-ticket/
+│           └── SKILL.md
 ├── .vscode/
 │   └── settings.json
 ├── docs/
