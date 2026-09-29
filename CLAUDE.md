@@ -8,6 +8,11 @@ Backend du projet Kommit : une API Node.js en TypeScript (Express, Prisma/Postgr
 kommit-backend/
 ├── .claude/
 │   ├── settings.json
+│   ├── agents/
+│   │   ├── code-reviewer.md
+│   │   ├── smoke-test-writer.md
+│   │   ├── test-planner.md
+│   │   └── unit-test-writer.md
 │   ├── rules/
 │   │   ├── architecture-backend.md
 │   │   ├── files.md
@@ -17,12 +22,18 @@ kommit-backend/
 │   │   ├── structure-a-jour.md
 │   │   └── tests-arrange-act-assert.md
 │   └── skills/
-│       └── start-ticket/
-│           └── SKILL.md
+│       ├── merge-pr/SKILL.md
+│       ├── open-pr/SKILL.md
+│       ├── review-code/SKILL.md
+│       ├── start-ticket/SKILL.md
+│       ├── write-code/SKILL.md
+│       └── write-tests/SKILL.md
 ├── .vscode/
 │   └── settings.json
 ├── docs/
-│   └── TECH.md
+│   ├── TECH.md
+│   ├── testing-strategy.md
+│   └── workflow-ticket-backend.md
 ├── prisma/
 │   └── schema.prisma
 ├── src/
